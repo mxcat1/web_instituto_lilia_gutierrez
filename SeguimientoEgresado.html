@@ -168,23 +168,142 @@
 		<!-- End Breadcrumbs -->
 	
 		<!-- Start Portfolio Details Area -->
-		<section class="pf-details section p-0">
+		<section class="pf-details section p-0 appointment">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-lg-12 col-md-12 col-12">
 						<div class="inner-content">
 							<div class="image">
 								<img src="images/salaenf.jpg" alt="#" style="height: 250px; width: 100%;">
 							</div>
-
 							<div>
-								<form action="" method="post">
+								<div class="card">
+									<h2 class="text-center text-dark font-weight-bold py-5">ENCUESTA PARA EGRESADOS</h2>
+								</div>
+								<form action="" method="post" class="form">
+									<h4 class="p-2">Datos Personales</h4>
 									<div class="container">
 										<div class="row">
-											<div class="form-group">
-												<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-												<div class="col-sm-10">
-													<input type="email" class="form-control" id="inputEmail3">
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="form-group">
+													<input name="nomape" type="text" placeholder="Nombre y Apellidos">
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-12">
+												<div class="form-group">
+													<input name="dni" type="text" placeholder="DNI">
+												</div>
+											</div>
+											<div class="col-lg-2 col-md-2 col-12">
+												<div class="form-group">
+													<input name="fechaingreso" type="number" min="1990" max="2030" placeholder="Año de Ingreso al Instituto">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="form-group">
+													<input name="domicilio" type="text" placeholder="Domicilio">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12">
+												<div class="form-group">
+													<input name="email" type="email" placeholder="Correo Electronico">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12">
+												<div class="form-group">
+													<input name="celular" type="text" placeholder="Celular">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="form-group">
+													<input name="programa" type="text" placeholder="Programa de Estudio">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12">
+												<div class="form-group">
+													<input name="aniofin" type="number" min="1990" max="2030" placeholder="Año que Termino">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12 d-flex flex-row justify-content-around">
+												<p class="h5">¿Se Titulo?</p>
+												<div class="d-flex flex-row justify-content-center">
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="titulado" class="form-check-input custom-radio" id="tituladosi" type="radio" value="si">
+															<label class="form-check-label" for="tituladosi">SI</label>
+														</div>
+													</div>
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="titulado" class="form-check-input custom-radio" id="tituladono" type="radio" value="no">
+															<label class="form-check-label" for="tituladono">NO</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-12">
+												<div class="form-group">
+													<input name="edad" type="number" min="15" max="60" placeholder="edad">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12 d-flex flex-row justify-content-around">
+												<p class="text">Género</p>
+												<div class="d-flex flex-row justify-content-center">
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="sexo" class="form-check-input custom-radio" id="sexomasculino" type="radio" value="masculino">
+															<label class="form-check-label" for="sexomasculino">Masculino</label>
+														</div>
+													</div>
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="sexo" class="form-check-input custom-radio" id="sexofemenino" type="radio" value="femenino">
+															<label class="form-check-label" for="sexofemenino">Femenino</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12">
+												<div class="form-group">
+													<input name="estadocivil" type="text" placeholder="Estado Civil">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-3 col-12">
+												<div class="form-group">
+													<input name="aniotitulo" type="number" min="1990" max="2030" placeholder="Año que se Titulo">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container">
+										<h4 class="p-2">Actividades Laborales</h4>
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-12 d-flex flex-row justify-content-around">
+												<p class="h5">¿Actualmente Trabaja?</p>
+												<div class="d-flex flex-row justify-content-center">
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="trabajaopcion" class="form-check-input custom-radio" id="trabajaopcionsi" type="radio" value="si">
+															<label class="form-check-label" for="trabajaopcionsi">Si</label>
+														</div>
+													</div>
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="trabajaopcion" class="form-check-input custom-radio" id="trabajaopcionno" type="radio" value="no">
+															<label class="form-check-label" for="trabajaopcionno">No</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-12">
+												<div class="form-group">
+													<input name="remuneracion" type="text" placeholder="Remuneracion Mensual">
 												</div>
 											</div>
 										</div>
