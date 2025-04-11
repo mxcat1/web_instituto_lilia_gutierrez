@@ -2767,11 +2767,24 @@ body{
 	border-radius:0;
 	border-radius: 4px;
 }
+.appointment .form .custom-check{
+	width: auto;
+	height: auto;
+	border: 1px solid #354da5;
+	text-transform: capitalize;
+	padding: 15px 18px;
+	margin: 5px 30px;
+	color: #555;
+	font-size: 14px;
+	font-weight:400;
+	border-radius:0;
+	border-radius: 4px;
+}
 .appointment .form textarea{
 	width: 100%;
 	height:200px;
     padding: 18px;
-	border:1px solid #eee;
+	border: 1px solid #354da5;
 	text-transform:capitalize;
 	resize:none;
 	border-radius: 4px;
@@ -2780,7 +2793,7 @@ body{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
-	border: 1px solid #eee;
+	border: 1px solid #354da5;
 	text-transform: capitalize;
 	padding: 0px 18px;
 	color: #999;
