@@ -184,52 +184,52 @@
 								<div class="card">
 									<h2 class="text-center text-dark font-weight-bold py-5">ENCUESTA PARA EGRESADOS</h2>
 								</div>
-								<form action="" method="post" class="form">
+								<form action="seguimientoegresados/formularioseguimiento.php" method="post" class="form">
 									<h4 class="p-2">Datos Personales</h4>
 									<div class="container">
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-12">
 												<div class="form-group">
-													<input name="nomape" type="text" placeholder="Nombre y Apellidos">
+													<input name="nomape" type="text" placeholder="Nombre y Apellidos" required>
 												</div>
 											</div>
 											<div class="col-lg-4 col-md-4 col-12">
 												<div class="form-group">
-													<input name="dni" type="text" placeholder="DNI">
+													<input name="dni" type="text" placeholder="DNI" required>
 												</div>
 											</div>
 											<div class="col-lg-2 col-md-2 col-12">
 												<div class="form-group">
-													<input name="fechaingreso" type="number" min="1990" max="2030" placeholder="Año de Ingreso al Instituto">
+													<input name="fechaingreso" type="number" min="1990" max="2030" placeholder="Año de Ingreso al Instituto" required>
 												</div>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-12">
 												<div class="form-group">
-													<input name="domicilio" type="text" placeholder="Domicilio">
+													<input name="domicilio" type="text" placeholder="Domicilio" required>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-12">
 												<div class="form-group">
-													<input name="email" type="email" placeholder="Correo Electronico">
+													<input name="email" type="email" placeholder="Correo Electronico" required>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-12">
 												<div class="form-group">
-													<input name="celular" type="text" placeholder="Celular">
+													<input name="celular" type="text" placeholder="Celular" required>
 												</div>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-6 col-md-6 col-12">
 												<div class="form-group">
-													<input name="programa" type="text" placeholder="Programa de Estudio">
+													<input name="programa" type="text" placeholder="Programa de Estudio" required>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-12">
 												<div class="form-group">
-													<input name="aniofin" type="number" min="1990" max="2030" placeholder="Año que Termino">
+													<input name="aniofin" type="number" min="1990" max="2030" placeholder="Año que Termino" required>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-12 d-flex flex-row justify-content-around">
@@ -237,13 +237,13 @@
 												<div class="d-flex flex-row justify-content-center">
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="titulado" class="form-check-input custom-radio" id="tituladosi" type="radio" value="si">
+															<input name="titulado" class="form-check-input custom-radio" id="tituladosi" type="radio" value="si" required>
 															<label class="form-check-label" for="tituladosi">SI</label>
 														</div>
 													</div>
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="titulado" class="form-check-input custom-radio" id="tituladono" type="radio" value="no">
+															<input name="titulado" class="form-check-input custom-radio" id="tituladono" type="radio" value="no" required>
 															<label class="form-check-label" for="tituladono">NO</label>
 														</div>
 													</div>
@@ -253,7 +253,7 @@
 										<div class="row">
 											<div class="col-lg-3 col-md-3 col-12">
 												<div class="form-group">
-													<input name="edad" type="number" min="15" max="60" placeholder="edad">
+													<input name="edad" type="number" min="15" max="60" placeholder="edad" required>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-12 d-flex flex-row justify-content-around">
@@ -261,13 +261,13 @@
 												<div class="d-flex flex-row justify-content-center">
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="sexo" class="form-check-input custom-radio" id="sexomasculino" type="radio" value="masculino">
+															<input name="sexo" class="form-check-input custom-radio" id="sexomasculino" type="radio" value="masculino" required>
 															<label class="form-check-label" for="sexomasculino">Masculino</label>
 														</div>
 													</div>
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="sexo" class="form-check-input custom-radio" id="sexofemenino" type="radio" value="femenino">
+															<input name="sexo" class="form-check-input custom-radio" id="sexofemenino" type="radio" value="femenino" required>
 															<label class="form-check-label" for="sexofemenino">Femenino</label>
 														</div>
 													</div>
@@ -275,12 +275,13 @@
 											</div>
 											<div class="col-lg-3 col-md-3 col-12">
 												<div class="form-group">
-													<input name="estadocivil" type="text" placeholder="Estado Civil">
+													<input name="estadocivil" type="text" placeholder="Estado Civil" required>
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-3 col-12">
 												<div class="form-group">
-													<input name="aniotitulo" type="number" min="1990" max="2030" placeholder="Año que se Titulo">
+													<span>Si no Se titulo, Colocar 1990</span>
+													<input name="aniotitulo" type="number" min="1990" max="2030" placeholder="Año que se Titulo" value="1990" title="Si no Se titulo, Colocar 1990">
 												</div>
 											</div>
 										</div>
@@ -293,13 +294,13 @@
 												<div class="d-flex flex-row justify-content-center">
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="trabajaopcion" class="form-check-input custom-radio" id="trabajaopcionsi" type="radio" value="si">
+															<input name="trabajaopcion" class="form-check-input custom-radio" id="trabajaopcionsi" type="radio" value="si" required>
 															<label class="form-check-label" for="trabajaopcionsi">Si</label>
 														</div>
 													</div>
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="trabajaopcion" class="form-check-input custom-radio" id="trabajaopcionno" type="radio" value="no">
+															<input name="trabajaopcion" class="form-check-input custom-radio" id="trabajaopcionno" type="radio" value="no" required>
 															<label class="form-check-label" for="trabajaopcionno">No</label>
 														</div>
 													</div>
@@ -338,6 +339,12 @@
 															<label class="form-check-label" for="tipopropia">Propia</label>
 														</div>
 													</div>
+													<div class="checkbox m-2">
+														<div class="form-check">
+															<input name="tipoempresa" class="form-check-input custom-radio" id="tipootro" type="radio" value="Otro">
+															<label class="form-check-label" for="tipopropia">Otro</label>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="col-lg-4 col-md-4 col-12">
@@ -349,7 +356,7 @@
 										<div class="row">
 											<div class="col-lg-4 col-md-4 col-12">
 												<div class="form-group">
-													<input name="direccionempresa" type="text" placeholder="Direccion de la Empresa">
+													<input name="direccionempresa" type="text" placeholder="Direccion de la Empresa" >
 												</div>
 											</div>
 											<div class="col-lg-4 col-md-4 col-12">
@@ -376,13 +383,13 @@
 												<div class="d-flex flex-row justify-content-center">
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="condicionlaboral" class="form-check-input custom-radio" id="condicionformal" type="radio" value="Estatal">
+															<input name="condicionlaboral" class="form-check-input custom-radio" id="condicionformal" type="radio" value="Estatal" required>
 															<label class="form-check-label" for="condicionformal">Estatal</label>
 														</div>
 													</div>
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="condicionlaboral" class="form-check-input custom-radio" id="condicioninformal" type="radio" value="Privada">
+															<input name="condicionlaboral" class="form-check-input custom-radio" id="condicioninformal" type="radio" value="Privada" required>
 															<label class="form-check-label" for="condicioninformal">Privada</label>
 														</div>
 													</div>
@@ -439,13 +446,13 @@
 												<div class="d-flex flex-row justify-content-center">
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="satisfaccionestudio" class="form-check-input custom-radio" id="satisfacesi" type="radio" value="si">
+															<input name="satisfaccionestudio" class="form-check-input custom-radio" id="satisfacesi" type="radio" value="si" required>
 															<label class="form-check-label" for="satisfacesi">Si</label>
 														</div>
 													</div>
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="satisfaccionestudio" class="form-check-input custom-radio" id="satisfaceno" type="radio" value="no">
+															<input name="satisfaccionestudio" class="form-check-input custom-radio" id="satisfaceno" type="radio" value="no" required>
 															<label class="form-check-label" for="satisfaceno">No</label>
 														</div>
 													</div>
@@ -457,23 +464,23 @@
 											<div class="col-lg-12 col-md-12 col-12 d-flex flex-column justify-content-around">
 												<div class="form-group d-flex flex-row justify-content-end">
 													<label for="pregunta1" class="h5 w-50">Tecnología y equipamiento del programa de estudios (Carrera)</label>
-													<input name="pregunta1" type="number" class="w-50" id="pregunta1" placeholder="0" min="1" max="5">
+													<input name="pregunta1" type="number" class="w-50" id="pregunta1" placeholder="0" min="1" max="5" value="0">
 												</div>
 												<div class="form-group d-flex flex-row justify-content-end">
 													<label for="pregunta2" class="h5 w-50">La experiencia de los profesores</label>
-													<input name="pregunta2" type="number" class="w-50" id="pregunta2" placeholder="0" min="1" max="5">
+													<input name="pregunta2" type="number" class="w-50" id="pregunta2" placeholder="0" min="1" max="5" value="0">
 												</div>
 												<div class="form-group d-flex flex-row justify-content-end">
 													<label for="pregunta3" class="h5 w-50">El uso de computación e informática</label>
-													<input name="pregunta3" type="number" class="w-50" id="pregunta3" placeholder="0" min="1" max="5">
+													<input name="pregunta3" type="number" class="w-50" id="pregunta3" placeholder="0" min="1" max="5" value="0">
 												</div>
 												<div class="form-group d-flex flex-row justify-content-end">
 													<label for="pregunta4" class="h5 w-50">Las prácticas en talleres</label>
-													<input name="pregunta4" type="number" class="w-50" id="pregunta4" placeholder="0" min="1" max="5">
+													<input name="pregunta4" type="number" class="w-50" id="pregunta4" placeholder="0" min="1" max="5" value="0">
 												</div>
 												<div class="form-group d-flex flex-row justify-content-end">
 													<label for="pregunta5" class="h5 w-50">La comunicación y el trato en el servicio educativo</label>
-													<input name="pregunta5" type="number" class="w-50" id="pregunta5" placeholder="0" min="1" max="5">
+													<input name="pregunta5" type="number" class="w-50" id="pregunta5" placeholder="0" min="1" max="5" value="0">
 												</div>
 											</div>
 										</div>
@@ -483,13 +490,13 @@
 												<div class="d-flex flex-row justify-content-around">
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="conformeconinsti" class="form-check-input custom-radio" id="conformesi" type="radio" value="si">
+															<input name="conformeconinsti" class="form-check-input custom-radio" id="conformesi" type="radio" value="si" required>
 															<label class="form-check-label" for="conformesi">Si</label>
 														</div>
 													</div>
 													<div class="checkbox m-2">
 														<div class="form-check">
-															<input name="conformeconinsti" class="form-check-input custom-radio" id="conformeno" type="radio" value="no">
+															<input name="conformeconinsti" class="form-check-input custom-radio" id="conformeno" type="radio" value="no" required>
 															<label class="form-check-label" for="conformeno">No</label>
 														</div>
 													</div>
@@ -510,7 +517,7 @@
 										<div class="row">
 											<div class="col-lg-12 col-md-12 col-12 d-flex flex-row justify-content-around align-items-center">
 												<button type="submit" class="btn btn-primary">Guardar</button>
-												<a href="#" class="btn btn-primary">Ver Listado</a>
+												<a href="seguimientoegresados/listaregresados.php" class="btn btn-primary">Ver Listado</a>
 												<button type="button" class="btn btn-danger" style="background: #7e0000">Cancelar</button>
 											</div>
 										</div>
