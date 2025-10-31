@@ -79,7 +79,7 @@ $result = $conn->query($sql);
                         <li><a href="https://sira.iestpliliagutierrez.edu.pe/login/">Estudiantes</a></li>
                         <li><a href="https://sira.iestpliliagutierrez.edu.pe/">Aula Virtual</a></li>
                         <li><a href="../BibliotecaVirtual.html">Biblioteca Virtual</a></li>
-                        <li><a href="../BolsaTrabajo.html">Bolsa de Empleo</a></li>
+                        <li><a href="https://sira.iestpliliagutierrez.edu.pe/login/">Bolsa de Trabajo</a></li>
                     </ul>
                     <!-- End Contact -->
                 </div>
@@ -137,13 +137,12 @@ $result = $conn->query($sql);
                                             <li><a href="https://sira.iestpliliagutierrez.edu.pe/login/">Alumno</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="../SeguimientoEgresado.html">Seguimiento de Egresados</a></li>
                                     <li><a href="#">El Instituto <i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="../docs/TE.pdf" target="_blank">Tasas Educativas</a></li>
-                                            <li><a href="" target="_blank">RI</a></li>
-                                            <li><a href="" target="_blank">PEI</a></li>
-                                            <li><a href="" target="_blank">PAT</a></li>
+                                            <li><a href="../docs/RI.pdf" target="_blank">RI</a></li>
+                                            <li><a href="../docs/PEI.pdf" target="_blank">PEI</a></li>
+                                            <li><a href="../docs/PAT2021.pdf" target="_blank">PAT</a></li>
 
 
                                         </ul>
